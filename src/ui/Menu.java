@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public Menu() {
-        Scanner scan = new Scanner(System.in);
-    }
-
     public void welcomeUser() {
         System.out.println("Welcome to the haiku application!");
+    }
+
+    public void appChoices() {
+        System.out.println("Press 1: create haiku");
+        System.out.println("Press 2: browse haikus");
     }
 
     public void promptUser(int firstSecondOrThird) {
@@ -19,6 +20,8 @@ public class Menu {
             case 2 -> "third";
             default -> "";
         };
+
+
         System.out.println("Please type in " + firstSecondOrThirdString + " line of haiku");
     }
 }
