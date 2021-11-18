@@ -1,7 +1,5 @@
 package ui;
 
-import java.util.Scanner;
-
 public class Menu {
 
     public void welcomeUser() {
@@ -13,6 +11,7 @@ public class Menu {
         System.out.println("Press 2: browse haikus");
     }
 
+    //optimized switch statement
     public void promptUser(int firstSecondOrThird) {
         String firstSecondOrThirdString = switch (firstSecondOrThird) {
             case 0 -> "first";
